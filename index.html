@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="https://i.pinimg.com/1200x/a9/1c/cf/a91ccf5735d47e35e4a8025d9dd8f7c2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap" rel="stylesheet">
+  <style>
+    .font-dori{
+          font-family: "Nunito", sans-serif;
+    }
+    .text-coklat{
+      color: #715A5A;
+    }
+  </style>
+  <body>
+    <!-- aria label untuk tunarungu -->
+    <nav class="sticky top-0 z-50 bg-[#BFECFF] backdrop:blur border-b border-pink-100"aria-label="Primary">
+      <div class="max-w-7xl mx-auto
+     px-4 sm:px">
+        <!-- untuk menu laptop -->
+        <div class="flex items-center justify-between h-16">
+          <a href="#" class="flex items-center text-coklat text-xl font-dori uppercase tracking-wider font-extrabold">Miaw</a>
+
+          <button
+            id="hamburger"
+            class="md:hidden p-2 rounded hover:text-[#FFCCEA] focus:outline-none focus:ring-2 focus:ring-orange-500"
+            aria-expanded="false"
+            aria-controls="main-menu"
+            aria-label="Toggle menu">
+            <svg
+              id="icon-open"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg
+              id="icon-close"
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 hidden"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+
+          <div id="main-menu" class="hidden md:flex md:items-center md:gap-2">
+            <div class="flex flex-col md:flex-row md:items-center md:gap-2 text-right md:text-left">
+              <a href="#aboutMe" class="px-3 py-2 text-coklat hover:text-[#FFF6E3] uppercase font-dori font-bold">About Me</a>
+              <a href="#whatIdo" class="px-3 py-2 text-coklat hover:text-[#FFF6E3] uppercase font-dori font-bold">What I do</a>
+              <a href="#portfolio" class="px-3 py-2 text-coklat hover:text-[#FFF6E3] uppercase font-dori font-bold">Portfolio</a>
+              <a href="#skills" class="px-3 py-2 text-coklat hover:text-[#FFF6E3] uppercase font-dori font-bold">Skill</a>
+              <a href="#myBlog" class="px-3 py-2 text-coklat hover:text-[#FFF6E3] uppercase font-dori font-bold">Blog</a>
+              <a href="#contactMe" class="bg-[#FFCCEA] hover:bg-[#FFF6E3] rounded-xl px-4 py-2 font-dori font-bold text-coklat">Contact Me</a>
+            </div>
+          </div>
+
+<!-- menu untuk hp -->
+          <div id="mobile-panel" class="md:hidden hidden border-pink-100 py-2">
+              <a href="#aboutMe" class="px-3 py-2 text-coklat hover:text-[#FFF6E3] uppercase font-dori font-bold transition">About Me</a>
+              <a href="#whatIdo" class="px-3 py-2 text-coklat hover:text-[#FFF6E3] uppercase font-dori font-bold transition">What I do</a>
+              <a href="#portfolio" class="px-3 py-2 text-coklat hover:text-[#FFF6E3] uppercase font-dori font-bold transition">Portfolio</a>
+              <a href="#myBlog" class="px-3 py-2 text-coklat hover:text-[#FFF6E3] uppercase font-dori font-bold transition">Skill</a>
+              <a href="#skills" class="px-3 py-2 text-coklat hover:text-[#FFF6E3] uppercase font-dori font-bold transition">Blog</a>
+              <a href="#contactMe" class="block bg-[#FFCCEA] hover:bg-[#BFECFF] rounded-xl px-4 py-2 font-dori font-bold text-[#FFF6E3] justify-center items-center">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="aboutMe" class="bg-[#FFF6E3]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-10 items-center">
+        <div class="order-2 lg:order-2 border-[12px] sm:border-[16px] border-[#BFECFF] rounded-2xl shadow-2xl">
+          <img src="images/I created it ✧🎀.jpeg" class="w-full object-cover" >
+        </div>
+        <div class="order-1 lg:order-1">
+          <h1 class="font-dori text-5xl text-coklat font-bold leading-tight">Helloo, I'm <span>Miwaa</span></h1>
+          <h2 class="font-dori text-2xl text-coklat font-bold leading-tight">Web / Mobile Developer</h2>
+          <p class="mt-5 leading-relaxed text-coklat font-dori">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident culpa vero corrupti, 
+          exercitationem, tempore harum libero deleniti blanditiis illo ipsa, animi cumque eaque! Sapiente quis nemo et alias mollitia libero?
+          </p>
+          <div class="mt-6 flex flex-wrap items-center gap-4">
+            <a href="" class="inline-flex items-center justify-center rounded-lg text-coklat bg-[#FFCCEA] hover:bg-[#BFECFF] px-4 py-3 text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="" class="inline-flex items-center justify-center rounded-lg text-coklat bg-[#FFCCEA] hover:bg-[#BFECFF] px-4 py-3 text-2xl"><i class="fa-brands fa-behance"></i></a>
+            <a href="" class="inline-flex items-center justify-center rounded-lg text-coklat bg-[#FFCCEA] hover:bg-[#BFECFF] px-4 py-3 text-2xl"><i class="fa-brands fa-github"></i></a>         
+            <a href="" class="inline-flex items-center justify-center rounded-lg text-coklat bg-[#FFCCEA] hover:bg-[#BFECFF] px-4 py-3 text-2xl"><i class="fa-brands fa-discord"></i></a>
+          </div>
+      </div>
+    </section>
+
+    <section id="whatIdo" class="bg-[#FFCCEA]">
+      <div class="max-w-7xl mx-auto px-4 md:px-8 py-20 border-t border-[#FFF6E3]">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold font-dori text-coklat underline underline-offset-8 decoration-[#BFECFF] decoration-4 uppercase tracking-widest">What I Do</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="rounded-xl bg-[#CDC1FF]/70 shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 grid rounded-full bg-[#FFCCEA] text-coklat place-items-center">
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <h3 class="text-coklat font-dori font-bold text-lg tracking-wider">Web Design</h3>
+            </div>
+            <p class="text-coklat font-dori">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim laboriosam aliquam recusandae. Facere veniam iusto rerum suscipit ex aspernatur aperiam culpa labore molestias harum, minima nihil sapiente vitae officiis quod?</p>
+          </div>
+          <div class="rounded-xl bg-[#CDC1FF]/70 shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 grid rounded-full bg-[#FFCCEA] text-coklat place-items-center">
+               <i class="fa-solid fa-mobile-screen-button"></i>
+              </div>
+              <h3 class="text-coklat font-dori font-bold text-lg tracking-wider">App Design</h3>
+            </div>
+            <p class="text-coklat font-dori">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim laboriosam aliquam recusandae. Facere veniam iusto rerum suscipit ex aspernatur aperiam culpa labore molestias harum, minima nihil sapiente vitae officiis quod?</p>
+          </div>
+          <div class="rounded-xl bg-[#CDC1FF]/70 shadow-2xl p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 grid rounded-full bg-[#FFCCEA] text-coklat place-items-center">
+                <i class="fa-solid fa-globe"></i>
+              </div>
+              <h3 class="text-coklat font-dori font-bold text-lg tracking-wider">Branding</h3>
+            </div>
+            <p class="text-coklat font-dori">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim laboriosam aliquam recusandae. Facere veniam iusto rerum suscipit ex aspernatur aperiam culpa labore molestias harum, minima nihil sapiente vitae officiis quod?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="bg-[#FFF6E3]">
+      <div class="max-w-7xl mx-auto px-4 md:px-8 py-20 border-t border-[#FFF6E3]">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold font-dori text-coklat underline underline-offset-8 decoration-[#BFECFF] decoration-4 uppercase tracking-widest">Portfolio</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="rounded-xl bg-[#CDC1FF]/70 shadow-2xl p-6">
+            <a href="https://i.pinimg.com/736x/88/4f/e6/884fe6d9b3e252ab4d03bb7d70fcea9e.jpg">
+              <img src="images/download (13).jpeg" alt="">
+              <h3 class="text-coklat font-dori font-bold text-lg tracking-wider text-center justify-center px-4 py-4">Website With React JS</h3>
+              <p class="text-coklat font-dori">Membuat website menggunakan React JS</p>
+            </a>
+        </div>
+        <div class="rounded-xl bg-[#CDC1FF]/70 shadow-2xl p-6">
+            <a href="https://i.pinimg.com/1200x/0f/b3/3d/0fb33d037284e3c94b12992a38c5d05e.jpg">
+              <img src="images/download (11).jpeg" alt="">
+              <h3 class="text-coklat font-dori font-bold text-lg tracking-wider text-center justify-center px-4 py-4">Website With React JS</h3>
+              <p class="text-coklat font-dori">Membuat website menggunakan React JS</p>
+            </a>
+        </div>
+        <div class="rounded-xl bg-[#CDC1FF]/70 shadow-2xl p-6">
+          <a href="https://i.pinimg.com/1200x/0f/b3/3d/0fb33d037284e3c94b12992a38c5d05e.jpg">
+            <img src="images/download (10).jpeg" alt="">
+            <h3 class="text-coklat font-dori font-bold text-lg tracking-wider text-center justify-center px-4 py-4">Website With React JS</h3>
+            <p class="text-coklat font-dori">Membuat website menggunakan React JS</p>
+            </a>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="myBlog" class="bg-[#FFF6E3]">
+      <div class="max-w-7xl mx-auto px-4 md:px-8 py-20 border-t border-[#FFF6E3]">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold font-dori text-coklat underline underline-offset-8 decoration-[#BFECFF] decoration-4 uppercase tracking-widest">My Blog</h2>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="bg-[#FFF6E3] rounded-lg p-6 shadow-2xl flex">
+            <div class="text-center text-coklat leading-tight mr-6">
+              <p class="text-sm text-coklat font-dori underline underline-offset-8 decoration-[#FFCCEA] mb-4">Aug</p>
+              <p class="text-2xl font-bold text-coklat font-dori">24</p>
+            </div>
+            <div>
+              <span class="text-[#BFECFF] text-sm font-semibold block font-dori mb-1">JANE DOE</span>
+              <h3 class="text-coklat font-dori text-xl font-bold mb-2">Review Jasa Website</h3>
+              <p class="text-gray-300 font-dori mb-4">Jasanya bagus, good job dan cepat</p>
+              <a href="#" class="text-[#FFCCEA] font-semibold hover:underline">Read More</a>
+            </div>
+          </div>
+          <div class="bg-[#FFF6E3] rounded-lg p-6 shadow-2xl flex">
+            <div class="text-center text-coklat leading-tight mr-6">
+              <p class="text-sm text-coklat font-dori underline underline-offset-8 decoration-[#FFCCEA] mb-4">Aug</p>
+              <p class="text-2xl font-bold text-coklat font-dori">24</p>
+            </div>
+            <div>
+              <span class="text-[#BFECFF] text-sm font-semibold block font-dori mb-1">JANE DOE</span>
+              <h3 class="text-coklat font-dori text-xl font-bold mb-2">Review Jasa Website</h3>
+              <p class="text-gray-300 font-dori mb-4">Jasanya bagus, good job dan cepat</p>
+              <a href="#" class="text-[#FFCCEA] font-semibold hover:underline">Read More</a>
+            </div>
+          </div>
+          <div class="bg-[#FFF6E3] rounded-lg p-6 shadow-2xl flex">
+            <div class="text-center text-coklat leading-tight mr-6">
+              <p class="text-sm text-coklat font-dori underline underline-offset-8 decoration-[#FFCCEA] mb-4">Aug</p>
+              <p class="text-2xl font-bold text-coklat font-dori">24</p>
+            </div>
+            <div>
+              <span class="text-[#BFECFF] text-sm font-semibold block font-dori mb-1">JANE DOE</span>
+              <h3 class="text-coklat font-dori text-xl font-bold mb-2">Review Jasa Website</h3>
+              <p class="text-gray-300 font-dori mb-4">Jasanya bagus, good job dan cepat</p>
+              <a href="#" class="text-[#FFCCEA] font-semibold hover:underline">Read More</a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id="skills" class="bg-[#FFCCEA]">
+      <div class="max-w-7xl mx-auto px-4 md:px-8 py-20 border-t border-[#FFF6E3]">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold font-dori text-coklat underline underline-offset-8 decoration-[#BFECFF] decoration-4 uppercase tracking-widest">Skills</h2>
+        </div>
+        <h3 class="text-xl font-bold text-coklat font-dori mb-2">Web Developer</h3>
+        <p class="text-coklat font-dori mb-8">Saya memiliki skill seperti berikut</p>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-6">
+          <div class="bg-[#FFF6E3] rounded-lg p-6 flex justify-center shadow-2xl items-center">
+            <img src="images/adobei.png" alt="Adobe Illustrator" class="h-12">
+        </div>
+      <div class="bg-[#FFF6E3] rounded-lg p-6 flex justify-center shadow-2xl items-center">
+        <img src="images/adobeps.png" alt="Adobe Photoshop" class="h-12">
+      </div>
+      <div class="bg-[#FFF6E3] rounded-lg p-6 flex justify-center shadow-2xl items-center">
+        <img src="images/html.png" alt="HTML5" class="h-12">
+      </div>
+      <div class="bg-[#FFF6E3] rounded-lg p-6 flex justify-center shadow-2xl items-center">
+        <img src="images/js.png" alt="JavaScript" class="h-12">
+      </div>
+      <div class="bg-[#FFF6E3] rounded-lg p-6 flex justify-center shadow-2xl items-center">
+        <img src="images/xd.png" alt="Adobe XD" class="h-12">
+      </div>
+      <div class="bg-[#FFF6E3] rounded-lg p-6 flex justify-center shadow-2xl items-center">
+        <img src="images/blend.png" alt="Blender" class="h-12">
+      </div>
+      <div class="bg-[#FFF6E3] rounded-lg p-6 flex justify-center shadow-2xl items-center">
+        <img src="images/sketch.png" alt="Sketch" class="h-12">
+      </div>
+      <div class="bg-[#FFF6E3] rounded-lg p-6 flex justify-center shadow-2xl items-center">
+        <img src="images/figma.png" alt="Figma" class="h-12">
+      </div>
+    </div>
+  </div>
+    </section>
+
+    <section id="contactMe" class="bg-[#FFCCEA]">
+      <div class="max-w-7xl mx-auto px-4 md:px-8 py-20 border-t border-[#BFECFF]">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold font-dori text-coklat underline underline-offset-8 decoration-[#BFECFF] decoration-4 uppercase tracking-widest">Contact Me</h2>
+        </div>
+        <p class="text-center text-coklat mb-8 font-dori">Hubungi kami jika ingin bekerja sama</p>
+
+    <!-- Form -->
+    <div class="bg-[#FFF6E3] p-8 rounded-lg shadow-lg">
+      <form action="#" method="POST" class="space-y-6">
+        <!-- Name & Email -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label for="name" class="block text-sm font-medium text-coklat font-dori mb-2">NAME</label>
+            <input type="text" id="name" name="name" class="w-full p-3 rounded bg-pink-100 text-white border border-amber-950 focus:outline-none focus:ring-2 focus:ring-[#BFECFF]" required>
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-coklat font-dori mb-2">EMAIL</label>
+            <input type="text" id="name" name="name" class="w-full p-3 rounded bg-pink-100 text-white border border-amber-950 focus:outline-none focus:ring-2 focus:ring-[#BFECFF]" required>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div>
+          <label for="message" class="block text-sm font-medium text-coklat font-dori mb-2">MESSAGE</label>
+          <textarea id="message" name="message" rows="5" class="w-full p-3 rounded bg-pink-100 text-white border border-amber-950 focus:outline-none focus:ring-2 focus:ring-[#BFECFF]" required></textarea>
+        </div>
+
+        <!-- Button -->
+        <button type="submit" class="bg-[#BFECFF] hover:bg-[#ffccea] text-coklat font-semibold px-6 py-3 font-dori rounded shadow-md">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+    </section>
+
+    <footer class="bg-[#FFF6E3] py-10">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    <!-- Map -->
+    <div class="rounded-lg overflow-hidden shadow-lg">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.43007009416!2d126.97068107633974!3d37.53329277204352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca260b4977c37%3A0x6916d08e258d30d5!2sBelift%20Lab%20Inc.!5e0!3m2!1sid!2sid!4v1693650412345!5m2!1sid!2sid" 
+        width="100%" 
+        height="250" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+    <!-- Address -->
+    <div class="text-coklat">
+      <h3 class="text-lg font-semibold mb-2 text-coklat font-dori">Alamat</h3>
+      <p class="text-coklat font-dori">
+        42 Hangang-daero, Yongsan District, Seoul,<br>Korea Selatan
+      </p>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center text-coklat font-dori text-sm mt-8 border-t border-gray-700 pt-4">
+    Copyright © 2024 — All Rights Reserved by <span class="text-[#] font-medium">Miwaa</span>
+  </div>
+    </footer>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      const reduceMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+      AOS.init({
+        duration: reduceMotion ? 0 : 600,
+        once: true,
+      });
+
+      const btn = document.getElementById("hamburger");
+      const iconOpen = document.getElementById("icon-open");
+      const iconClose = document.getElementById("icon-close");
+      const menu = document.getElementById("main-menu");
+      const panel = document.getElementById("mobile-panel");
+
+      btn?.addEventListener("click", () => {
+        const expanded = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!expanded));
+        iconOpen.classList.toggle("hidden");
+        iconClose.classList.toggle("hidden");
+        panel.classList.toggle("hidden");
+      });
+
+      panel?.querySelectorAll("a").forEach((a) => {
+        a.addEventListener("click", () => {
+          btn.setAttribute("aria-expanded", "false");
+          iconOpen.classList.remove("hidden");
+          iconClose.classList.add("hidden");
+          panel.classList.add("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>

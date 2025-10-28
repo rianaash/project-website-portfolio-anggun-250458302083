@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+     <!-- block pasti turun kebawah -->
+    <div class="bg-blue-300 block">kotak 1 (block)</div>
+    <div class="bg-blue-500 block">kotak 1 (block)</div>
+
+    <br>
+
+    <!-- inline besarnya menyeseuaikan konten -->
+    <span class="bg-pink-300 inline">kotak 1 (inline)</span>
+    <span class="bg-pink-500 inline">kotak 2 (inline)</span>
+
+    <br> <br>
+
+    <!-- bisa ngatur width sama height -->
+    <span class="bg-green-300 inline-block w-24 h-12">kotak 1</span>
+    <span class="bg-green-500 inline-block w-24 h-12">kotak 2</span>
+    <br>
+    <br>
+    
+    <!-- flex untuk mengatur rata sejajar. justify; atur arah horizontal
+     align gaada di align, pakenya items    ; aruh arah vertikal
+     gap; atur jarak antar item -->
+    <div class="flex flex-col  gap-2 bg-amber-100 p-2">
+        <div class="bg-amber-300 w-16 h-16">a</div>
+        <div class="bg-amber-500 w-16 h-16">b</div>
+        <div class="bg-amber-800 w-16 h-16">c</div>
+    </div>
+
+</body>
+</html>
